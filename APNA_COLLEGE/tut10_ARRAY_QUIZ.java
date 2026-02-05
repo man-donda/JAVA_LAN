@@ -17,7 +17,7 @@ public class tut10_ARRAY_QUIZ {
 
         for(int i = 0; i < numbers.length; i++){
             if(numbers[i]==x){
-            System.out.println("X found at index number "+ i);
+            System.out.println(x+" found at index number "+ i);
             }
         }
     }
