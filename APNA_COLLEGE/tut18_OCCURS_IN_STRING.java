@@ -19,7 +19,7 @@ public class tut18_OCCURS_IN_STRING {
                 last = idx;
             }
         }
-        findOccur(str, idx+1, element);
+        findOccur(str, idx + 1, element);
     }
 
     public static void main(String[] args) {
