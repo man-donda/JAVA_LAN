@@ -26,6 +26,31 @@ class LL {
         head = newNode;
     }
 
+    public void addInMiddle(int index, String data) {
+        if (index > size || index < 0) {
+            System.out.println("Invalid Index value");
+            return;
+        }
+        size++;
+
+        Node newNode = new Node(data);
+        if (head == null || index == 0) {
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+        Node currNode = head;
+        for (int i = 1; i < size; i++) {
+            if (i == index) {
+                Node nextNode = currNode.next;
+                currNode.next = newNode;
+                newNode.next = nextNode;
+                break;
+            }
+            currNode = currNode.next;
+        }
+    }
+
     public void addLast(String data) {
         Node newNode = new Node(data);
 
@@ -46,7 +71,7 @@ class LL {
         Node currNode = head;
 
         while (currNode != null) {
-            System.out.println(currNode.data + "-> ");
+            System.out.print(currNode.data + "-> ");
             currNode = currNode.next;
         }
         System.out.println("null");
@@ -86,9 +111,19 @@ class LL {
     public int getSize() {
         return size;
     }
+}
 
+public class tut27_LINKED_LIST_IMPLEMENT1{
     public static void main(String[] args) {
         LL list = new LL();
+        list.addFirst("shradha");
+        list.addFirst("name");
+        list.addFirst("my");
+        System.out.println(list);
+
+        list.addInMiddle(2, "is");
+        System.out.println(list);
+
         list.addLast("is");
         list.addLast("a");
         list.addLast("list");
@@ -104,5 +139,7 @@ class LL {
 
         list.removeLast();
         list.printList();
+
+
     }
 }
