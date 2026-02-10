@@ -25,7 +25,7 @@ public class tut31_QUEUE_QUIZ {
 
       public static int remove(){
         if(isEmpty()){
-            System.out.println("Emoty queue.");
+            System.out.println("Empty queue.");
             return -1;
         }
         return s1.pop();
@@ -33,7 +33,7 @@ public class tut31_QUEUE_QUIZ {
 
       public static int peek(){
         if(isEmpty()){
-            System.out.println("Emoty queue.");
+            System.out.println("Empty queue.");
             return -1;
         }
         return s1.peek();
