@@ -1,6 +1,5 @@
 import java.util.*;
 
-
 public class tut31_QUEUE_QUIZ {
 
     static class Queue{
