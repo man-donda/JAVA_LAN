@@ -131,7 +131,6 @@ public class tut36_HashMapCode {
         }
 
     }
-
     public static void main(String[] args) {
         HashMap<String, Integer> map = new HashMap<>();
         map.put("India", 190);
@@ -142,7 +141,6 @@ public class tut36_HashMapCode {
         for (int i = 0; i < keys.size(); i++) {
             System.out.println(keys.get(i) + " " + map.get(keys.get(i)));
         }
-
         map.remove("India");
         System.out.println(map.get("India"));
     }
