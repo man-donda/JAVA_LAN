@@ -41,9 +41,22 @@ public class tut39_CYCLE_DIRECTION {
     }
     public static void main(String[] args) {
         int V = 4;
+        
         ArrayList<Edge> graph[] = new ArrayList[V];
         creatGraph(graph);
 
-        System.out.println(isCycleDirected(graph, new boolean[V], 0, new boolean[V]));
+        boolean vis[] = new boolean[V];
+        boolean rec[] = new boolean[V];
+
+        for(int i = 0; i < V; i++){
+            if(!vis[i]){
+                boolean isCycle = isCycleDirected(graph, vis, 0, rec);
+                if(isCycle){
+                    System.out.println(isCycle);
+                    break;
+                }
+            }
+        }
+
     }
 }
