@@ -1,9 +1,9 @@
 import java.util.*;
 
 public class PROJECT_3_ATM_SYSTEM {
-    
+
     private double balance;
-    private final int PIN = 1234;  // Default PIN
+    private final int PIN = 1234; // Default PIN
 
     public PROJECT_3_ATM_SYSTEM(double b) {
         this.balance = b;
@@ -36,9 +36,10 @@ public class PROJECT_3_ATM_SYSTEM {
             System.out.println("₹" + amount + " withdrawn successfully.");
         }
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        PROJECT_3_ATM_SYSTEM atm = new PROJECT_3_ATM_SYSTEM(5000); 
+        PROJECT_3_ATM_SYSTEM atm = new PROJECT_3_ATM_SYSTEM(5000);
 
         System.out.println("----- Welcome to ATM -----");
 

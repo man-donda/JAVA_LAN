@@ -25,34 +25,23 @@ public class PROJECT_5_STUDENTS_MARKS {
 
         if (m1 < 33 && m2 < 33 && m3 < 33) {
             System.out.println("You are failed in all subjects.");
-        }
-        else if ((m1 < 33 && m2 < 33) || 
-                 (m2 < 33 && m3 < 33) || 
-                 (m3 < 33 && m1 < 33)) {
+        } else if ((m1 < 33 && m2 < 33) || (m2 < 33 && m3 < 33) || (m3 < 33 && m1 < 33)) {
             System.out.println("You are failed in two subjects.");
-        }
-        else if (m1 < 33 || m2 < 33 || m3 < 33) {
+        } else if (m1 < 33 || m2 < 33 || m3 < 33) {
             System.out.println("You are failed in a particular subject.");
-        }
-        else if (per < 40) {
+        } else if (per < 40) {
             System.out.println("You are failed due to low percentage.");
-        }
-        else if (per >= 90 && per <= 100) {
+        } else if (per >= 90 && per <= 100) {
             System.out.println("Your grade is A");
-        }
-        else if (per >= 80) {
+        } else if (per >= 80) {
             System.out.println("Your grade is B");
-        }
-        else if (per >= 70) {
+        } else if (per >= 70) {
             System.out.println("Your grade is C");
-        }
-        else if (per >= 60) {
+        } else if (per >= 60) {
             System.out.println("Your grade is D");
-        }
-        else if (per >= 50) {
+        } else if (per >= 50) {
             System.out.println("Your grade is E");
-        }
-        else {
+        } else {
             System.out.println("Your grade is F");
         }
     }

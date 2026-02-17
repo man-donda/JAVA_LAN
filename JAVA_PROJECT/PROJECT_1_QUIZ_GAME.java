@@ -28,7 +28,6 @@ public class PROJECT_1_QUIZ_GAME {
 
                     ArrayList<Question> questions = new ArrayList<>();
 
-                    // Adding Questions
                     questions.add(new Question(
                             "Who is the Prime minister of India?",
                             new String[] { "1. Narendra Modi", "2. Rahul gandhi", "3. Lalu Yadav", "4. Amit Shah" },
