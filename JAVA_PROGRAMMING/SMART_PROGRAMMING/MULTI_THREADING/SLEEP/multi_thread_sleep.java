@@ -2,14 +2,14 @@ import java.util.*;
 
 class test1 extends Thread {
     public void run() {
-        try {
-            for (int i = 1; i <= 5; i++) {
-                System.out.println(i + " : " + Thread.currentThread().getName());
-                Thread.sleep(1000);
-            }
-        } catch (Exception e) {
-            System.out.println(e);
+       try{
+        for(int i =1; i <= 5 ; i++){
+            System.out.println(i + " : " + Thread.currentThread().getName());
+            Thread.sleep(1000);
         }
+       }catch(Exception e){
+            e.printStackTrace();
+       }
     }
 }
 
